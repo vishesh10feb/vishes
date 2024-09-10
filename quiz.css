@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0F0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .quiz-container {   box-shadow: 10px 10px 5px rgb(225, 225, 225);
+    background: #efecec;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    transition: transform 0.5s ease;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .options { margin-left: 140px;
+    margin-top: 20px; width: 200px;
+    text-align: center;
+  }
+  
+  .option {
+    background: linear-gradient(45deg, #dec4ea, #a81ae4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  width: 200px;
+    transition: background-color 0.3s;
+  }
+  
+  .option:hover {
+    background-color: #2980b9;
+  }
+  
+  #feedback {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #27ae60;
+  }
+  
+  #next-btn {
+    display: none;
+    background-color: #e67e22;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #next-btn:hover {
+    background-color: #d35400;
+  }
+  
+  .quiz-container.animate {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  
+  /* Certificate container */
+  .certificate-container {
+    display: none;
+    text-align: center;
+  }
+  
+  .certificate {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #download-certificate {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  #download-certificate:hover {
+    background-color: #2980b9;
+  }
+  
+  

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz with Certificate</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1 id="question">Quiz Question</h1>
+    <div class="options">
+      <button class="option" onclick="checkAnswer(0)">Option 1</button>
+      <button class="option" onclick="checkAnswer(1)">Option 2</button>
+      <button class="option" onclick="checkAnswer(2)">Option 3</button>
+      <button class="option" onclick="checkAnswer(3)">Option 4</button>
+    </div>
+    <div id="feedback"></div>
+    <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+  </div>
+
+  <div class="certificate-container" id="certificate-container" style="display: none;">
+    <div class="certificate">
+      <h2>Certificate of Completion</h2>
+      <p>Congratulations, <span id="user-name"></span>!</p>
+      <p>Your score: <span id="user-score"></span> / <span id="total-questions"></span></p>
+      <p>You have successfully completed the quiz.</p>
+      <button id="download-certificate" onclick="downloadCertificate()">Download Certificate</button>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+</body>
+</html>
+
+
